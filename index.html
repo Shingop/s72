@@ -15,7 +15,24 @@
   <!-- ── INTRO SCREEN ── -->
   <div id="intro-screen">
     <div class="intro-logo"></div>
-    <button id="intro-enter-btn">ENTER</button>
+
+    <!-- Stage 1: Enter button -->
+    <div id="intro-enter-stage">
+      <button id="intro-enter-btn">ENTER</button>
+    </div>
+
+    <!-- Stage 2: Loading bar (hidden until enter pressed) -->
+    <div id="intro-loading-stage">
+      <span class="intro-hourglass">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="white"><g><path d="M14.857 20.003v1.14h2.28v1.147H6.855v-1.147h2.287v-1.14H6.855v-2.288h-1.14v4.575H3.427v1.14h17.146v-1.14h-2.288v-4.575h-1.148v2.288zm1.14-4.575h1.14v2.287h-1.14Zm0-9.143h1.14v2.287h-1.14Zm-1.14 8.003h1.14v1.14h-1.14Zm-1.147-1.14h1.148v1.14H13.71Z"/><path d="M12.57 18.855h2.287v1.148H12.57Zm2.287-7.995V9.713h1.14v-1.14H7.995v1.14h1.147v1.147h1.14v2.287h1.148v5.708h1.14v-5.708h1.14V10.86zm-5.714 7.995h2.287v1.148H9.143Z"/><path d="M9.143 13.148h1.14v1.14h-1.14Zm-1.148 1.14h1.148v1.14H7.995Zm-1.14 1.14h1.14v2.287h-1.14Zm0-9.143h1.14v2.287h-1.14Zm0-4.567h10.283v4.567h1.147V1.718h2.288V.57H3.428v1.148h2.287v4.567h1.14z"/></g></svg>
+      </span>
+      <div class="intro-main-text">INITIALIZING TERMINAL SESSION...</div>
+      <div class="intro-sub-text" id="intro-sub-text">LOADING FONT RESOURCES...</div>
+      <div class="intro-bar-wrap">
+        <div class="intro-bar-fill" id="intro-bar-fill"></div>
+      </div>
+      <div class="intro-pct" id="intro-pct">0%</div>
+    </div>
   </div>
   <div style="position:absolute; opacity:0; pointer-events:none;">
     <button class="db-btn confirm-btn" id="new-item-confirm">new-file-stuff</button>
