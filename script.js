@@ -1,9 +1,56 @@
 // ── Intro screen ──
 document.getElementById('intro-enter-btn').addEventListener('click', () => {
-  const intro = document.getElementById('intro-screen');
-  intro.classList.add('slide-up');
-  // Remove from DOM after animation so it doesn't block clicks
-  intro.addEventListener('transitionend', () => intro.remove(), { once: true });
+  const enterStage   = document.getElementById('intro-enter-stage');
+  const loadingStage = document.getElementById('intro-loading-stage');
+  const barFill      = document.getElementById('intro-bar-fill');
+  const pctEl        = document.getElementById('intro-pct');
+  const subText      = document.getElementById('intro-sub-text');
+  const intro        = document.getElementById('intro-screen');
+
+  // Swap stages
+  enterStage.style.display = 'none';
+  loadingStage.classList.add('visible');
+
+  // Loading subtexts that cycle during progress
+  const subtexts = [
+    'LOADING FONT RESOURCES...',
+    'ESTABLISHING SECURE CONNECTION...',
+    'VERIFYING USER CREDENTIALS...',
+    'LOADING DATABASE INDEX...',
+    'DECRYPTING FILE SYSTEM...',
+    'SYNCING SITE TELEMETRY...',
+    'FINALIZING INTERFACE...',
+  ];
+
+  const totalDuration = 3500; // ms — 3.5 seconds to hit 100%
+  const interval = 40;        // update every 40ms
+  const steps = totalDuration / interval;
+  let current = 0;
+  let lastSubIdx = -1;
+
+  const timer = setInterval(() => {
+    current++;
+    const pct = Math.min(Math.round((current / steps) * 100), 100);
+
+    barFill.style.width = pct + '%';
+    pctEl.textContent = pct + '%';
+
+    // Swap subtext at roughly even intervals
+    const subIdx = Math.min(Math.floor((pct / 100) * subtexts.length), subtexts.length - 1);
+    if (subIdx !== lastSubIdx) {
+      subText.textContent = subtexts[subIdx];
+      lastSubIdx = subIdx;
+    }
+
+    if (pct >= 100) {
+      clearInterval(timer);
+      // Brief pause at 100% then slide up
+      setTimeout(() => {
+        intro.classList.add('slide-up');
+        intro.addEventListener('transitionend', () => intro.remove(), { once: true });
+      }, 400);
+    }
+  }, interval);
 });
 
 // This is V2 of the JS Code
