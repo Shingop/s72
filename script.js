@@ -7,7 +7,7 @@ document.getElementById('intro-enter-btn').addEventListener('click', () => {
   const subText      = document.getElementById('intro-sub-text');
   const intro        = document.getElementById('intro-screen');
 
-  // Swap stage
+  // Swap stages
   enterStage.style.display = 'none';
   loadingStage.classList.add('visible');
 
@@ -1004,30 +1004,36 @@ function openMessage(msg) {
 
 const mapToggle = document.querySelector('.map-tab-toggle');
 const mapTabsContainer = document.querySelector('.map-tabs');
-const mapTabs = document.querySelectorAll('.map-tab');
 const mapLayers = document.querySelectorAll('.map-layer');
 
-/* open/close dropdown */
+/* open/close the whole dropdown */
 if (mapToggle && mapTabsContainer) {
   mapToggle.addEventListener('click', () => {
     mapTabsContainer.classList.toggle('open');
   });
 }
 
-/* switch maps */
-mapTabs.forEach(tab => {
+/* category toggle — clicking opens/closes that category */
+document.querySelectorAll('.map-category-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.map-category').classList.toggle('open');
+  });
+});
+
+/* subcategory toggle */
+document.querySelectorAll('.map-subcategory-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.map-subcategory').classList.toggle('open');
+  });
+});
+
+/* switch maps on leaf tab click */
+document.querySelectorAll('.map-tab').forEach(tab => {
   tab.addEventListener('click', () => {
-
-    // remove active from tabs
-    mapTabs.forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.map-tab').forEach(t => t.classList.remove('active'));
     tab.classList.add('active');
-
-    // hide all maps
-    mapLayers.forEach(map => map.classList.remove('active'));
-
-    // show selected map
+    mapLayers.forEach(layer => layer.classList.remove('active'));
     const target = document.getElementById(tab.dataset.map);
     if (target) target.classList.add('active');
-
   });
 });
