@@ -7,7 +7,7 @@ document.getElementById('intro-enter-btn').addEventListener('click', () => {
   const subText      = document.getElementById('intro-sub-text');
   const intro        = document.getElementById('intro-screen');
 
-  // Swap stages
+  // Swap stage
   enterStage.style.display = 'none';
   loadingStage.classList.add('visible');
 
