@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCiPNET TERMINAL v4.2.3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── INTRO SCREEN ── -->
+  <div id="intro-screen">
+    <div class="intro-logo"></div>
+    <button id="intro-enter-btn">ENTER</button>
+  </div>
+  <div style="position:absolute; opacity:0; pointer-events:none;">
+    <button class="db-btn confirm-btn" id="new-item-confirm">new-file-stuff</button>
+  <span class="material-symbols-outlined">folder</span>
+  <span class="material-symbols-outlined">description</span>
+    <img alt="" src="https://raw.githubusercontent.com/Shingop/imagehosting/refs/heads/main/cadmuslogo2.png" />
+    <img alt="" src="https://raw.githubusercontent.com/Shingop/imagehosting/refs/heads/main/cadmuslogo3.png" />    
+    <img alt="" src="https://github.com/Shingop/Cadmus/blob/main/scplogo.png?raw=true" />
+  <iframe src="https://docs.google.com/document/d/17Sf0QYSeKJreursY1TzC63NRlA7AOHaRNgLH4vyEPAg/preview?tab=t.0"
+    style="width:100%; height:500px; border:none;">
+  </iframe>
+  <iframe src="https://docs.google.com/document/d/1ej32s03zOLnpBBGN0Jmj2cRmqci9HOAGZnLvuT_5_2w/preview?tab=t.0"
+    style="width:100%; height:500px; border:none;">
+  </iframe>
+</div>
+ <div class="bg-logo"></div>
+  <nav class="tabbar">
+    <div class="tabs">
+      <button class="tab active" data-tab="terminal">SCiPNET TERMINAL</button>
+      <button class="tab" data-tab="database">SITE DATABASE</button>
+      <button class="tab" data-tab="map">SITE MAP</button>
+    </div>
+  </nav>
+ 
+  <main>
+ 
+    <section class="page active" id="terminal">
+
+<span class="scip-terminal">SCiPNET TERMINAL</span> 
+<button class="db-btn"><span class="material-symbols-outlined" style="font-size:13px; vertical-align:middle; margin-right:4px;">mail</span>INBOX</button>
+<h2>
+      <div class="xterm-rows" style="line-height: normal; letter-spacing: -0.0125px;" aria-hidden="true">
+      <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; ">______________________________________________________________________________</span>
+      </div>
+      
+      <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;"></div>
+      
+      <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; ">-------------------------- SCiPNET TERMINAL v4.2.3 ---------------------------</span>
+      </div>
+      
+      <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; ">SECURE, CONTAIN, PROTECT</span>
+      </div>
+      
+      <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; ">SCP FOUNDATION DATABASE NETWORK</span>
+      </div>
+      
+      <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;"></div>
+      
+      <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; ">Access Time: </span>
+      </div>
+   <h3 id="date"></h3> <script>document.getElementById("date").innerHTML = Date();</script>
+      
+      <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;"></div>
+      
+        <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px;">Access Point:</span>
+          <span style="letter-spacing: -0.0106132px; color: rgba(52, 65, 106); ">[ SITE – 72 ]</span>
+      </div>
+        
+        <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;"></div>
+
+       <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; ">Enter '<span class="xterm-fg-208" style="letter-spacing: -0.0106132px; color: #f38100;">help</span>' for a list of the SCiPNET's Functions.</span>
+      </div>
+ 
+        <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;"></div>
+        
+      <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; ">______________________________________________________________________________</span>
+      </div>
+      
+      <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;"></div></div>
+      
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+    <span class="xterm-fg-208" style="letter-spacing: -0.0106132px; color: #4e9a04;">admin</span><span style="letter-spacing: -0.0106132px; ">@</span><span class="xterm-fg-208" style="letter-spacing: -0.0106132px; color: #119698;">scipnet</span><span style="letter-spacing: -0.0106132px; ">:</span><span class="xterm-fg-208" style="letter-spacing: -0.0106132px; color: #3465a4;">~</span><span style="letter-spacing: -0.0106132px; ">$ help</span>
+      </div>
+  
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;"></div>
+      
+ <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; ">______________________________________________________</span>
+      </div>
+  
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;"></div>
+  
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; ">-------------------------- OVERVIEW ---------------------------</span>
+      </div>
+  
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; ">The SCiPNET Direct Access Terminal provides secure access to</span>
+      </div>
+  
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; ">the SCiPNET intranet and databases utilized by the SCP</span>
+      </div>
+  
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; ">Foundation's research and containment teams. You have been</span>
+      </div>
+  
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; ">granted provisional access to this terminal due to your</span>
+      </div>
+  
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; ">security clearance level.</span>
+      </div>
+  
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;"></div>
+  
+      <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+        <span style="letter-spacing: -0.0106132px; ">-------------------------- FUNCTIONS ---------------------------</span>
+      </div>
+  
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;"></div>
+  
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; "><span class="xterm-fg-208" style="letter-spacing: -0.0106132px; color: #f38100;">INBOX:</span> Displays all <span style="letter-spacing: -0.0106132px; color: rgba(52, 65, 106); "> SITE – 72</span> Announcements & notifications. (Look there for in-lore announcements/incidents.)</span>
+      </div>
+  
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;"></div>
+  
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; "><span class="xterm-fg-208" style="letter-spacing: -0.0106132px; color: #f38100;">SITE DATABASE:</span> Contains all files pertaining to & around<span style="letter-spacing: -0.0106132px; color: rgba(52, 65, 106); "> SITE – 72</span>.</span>
+      </div>
+  
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;"></div>
+  
+  <div style="width: 1442px; height: 18px; line-height: 18px; overflow: hidden;">
+      <span style="letter-spacing: -0.0106132px; "><span class="xterm-fg-208" style="letter-spacing: -0.0106132px; color: #f38100;">SITE MAP:</span> Displays all of<span style="letter-spacing: -0.0106132px; color: rgba(52, 65, 106); "> SITE – 72's</span> floor plans & other need-to-know locations.</span>
+      </div>
+  
+      </h2>
+    </section>
+ 
+    <!-- DATABASE PAGE -->
+    <section class="page" id="database">
+ 
+      <div class="db-header">
+        <div class="db-filepath">
+          <span class="filepath-label">FILE PATH</span>
+          <div class="filepath-row">
+            <span class="filepath-root"><span class="filepath-home-icon">&#x2302;</span> HOME</span>
+            <span class="filepath-sep"><span class="filepath-sep-active"></span> </span>
+          </div>
+        </div>
+        <div class="db-actions">
+          <button class="db-btn db-btn--icon" title="Up directory">&#x2191;</button>
+          <button class="db-btn" id="grid-view-btn">&#9783; GRID VIEW</button>
+          <button class="db-btn" id="new-item-btn">&#xFF0B; NEW ITEM</button>
+        </div>
+      </div>
+ 
+      <div class="db-explorer">
+        <div class="file-list" id="file-list"></div>
+      </div>
+ 
+    </section>
+ 
+<section class="page" id="map"> 
+  
+  <div class="map-wrapper"> 
+    
+    <div class="map-tabs">
+
+  <button class="map-tab-toggle">
+    <span class="material-symbols-outlined">keyboard_arrow_up</span>
+  </button>
+
+  <div class="map-tab-list">
+
+    <button class="map-tab active" data-map="map-floor-1">FLOOR 1</button>
+    <button class="map-tab" data-map="map-floor-2">FLOOR 2</button>
+    <button class="map-tab" data-map="map-research">RESEARCH</button>
+
+  </div>
+
+</div>
+
+    
+    <button class="db-btn map-inbox-btn">
+    <span class="material-symbols-outlined" style="font-size:13px; vertical-align:middle; margin-right:4px;">mail</span>
+    INBOX
+  </button>
+    
+    <div class="map-site-label">
+      <span class="map-site-dot"></span>
+      <span>SITE-72</span>
+    </div>
+    
+    <div class="map-security-label">
+      SECURITY FACTOR
+      <span class="material-symbols-outlined">warning</span>
+    </div>
+    
+    <div class="map-stats">
+  <div class="map-stats-line"></div>
+
+  <div class="map-stat">
+    <div class="map-stat-dot"></div>
+    <div class="map-stat-content">
+      <div class="map-stat-label">ACTIVE PERSONNEL</div>
+      <div class="map-stat-value">160</div>
+    </div>
+  </div>
+
+  <div class="map-stat">
+    <div class="map-stat-dot"></div>
+    <div class="map-stat-content">
+      <div class="map-stat-label">SCPS</div>
+      <div class="map-stat-value">Unknown</div>
+    </div>
+  </div>
+
+  <div class="map-stat">
+    <div class="map-stat-dot"></div>
+    <div class="map-stat-content">
+      <div class="map-stat-label">INCIDENTS</div>
+      <div class="map-stat-value">Unknown</div>
+    </div>
+  </div>
+</div>
+
+    <div class="map-threat-label">THREAT LEVEL</div>
+<div class="map-threat-value omerta">OMERTÁ</div>
+    
+    <svg class="map-border" viewBox="0 0 1000 600" preserveAspectRatio="none"> 
+    <path d=" 
+             M 120 0 
+             L 1000 0 
+             L 1000 600 
+             L 0 600 
+             L 0 300 
+             L 18 300 
+             L 18 100 
+             L 0 100 
+             L 0 0 
+             L 120 0 " /> 
+    </svg> 
+    <div class="border-label"> SECURITY VISUALIZATION SYSTEM </div> 
+    <div class="map-content"> 
+    <div class="map-layer active" id="map-floor-1">
+    <!-- Floor 1 content -->
+  </div>
+
+  <div class="map-layer" id="map-floor-2">
+    <!-- Floor 2 content -->
+  </div>
+
+  <div class="map-layer" id="map-research">
+    <!-- Research department -->
+  </div>
+    </div> 
+  </div> 
+    </section>
+    
+    
+  </main>
+ 
+  <!-- File window modal -->
+  <div class="file-overlay" id="file-overlay">
+    <div class="file-window" id="file-window">
+      <div class="file-window-titlebar">
+        <span class="file-window-name" id="file-window-name">untitled</span>
+        <div class="file-window-controls">
+          <button class="wc-btn" style="color:rgba(255,255,255,0.4);">&#9472;</button>
+          <button class="wc-btn" style="color:rgba(255,255,255,0.4);">&#9633;</button>
+          <button class="wc-btn wc-close" id="file-window-close">&#10005;</button>
+        </div>
+      </div>
+      <div class="file-window-body" id="file-window-body"></div>
+    </div>
+  </div>
+ 
+  <!-- New item modal -->
+  <div class="new-item-overlay" id="new-item-overlay">
+    <div class="new-item-modal">
+      <div class="new-item-header">
+        <span>ACCESS DENIED</span>
+        <button class="wc-btn wc-close" id="new-item-close">&#10005;</button>
+      </div>
+      <div class="new-item-body">
+        <label>FILE NAME</label>
+        <input type="text" id="new-file-name" placeholder="e.g. document.txt" disabled/>
+        <label>CONTENT</label>
+        <textarea id="new-file-content" placeholder="Enter file contents..." disabled></textarea>
+        <label>YOU DO NOT HAVE THE NECCESSARY AUTHORIZATION TO UPLOAD A NEW FILE, IF THIS IS AN ERROR PLEASE CONTACT YOUR LOCAL ADMINISTRATION DEPARTMENT.</label>
+      </div>
+    </div>
+  </div>
+ <!-- SIDEBAR HTML -->
+<div class="site72-sidebar" id="site72-sidebar">
+ 
+  <!-- MAP AREA -->
+  <div class="s72-map">
+    <canvas id="s72-map-canvas"></canvas>
+    <div class="s72-map-overlay">
+      <div class="s72-map-scanline"></div>
+    </div>
+    <div class="s72-map-labels">
+      <div class="s72-meta-row"><span class="s72-meta-key">COUNTRY</span></div>
+      <div class="s72-meta-val">[ UNITED STATES OF AMERICA ]</div>
+      <div class="s72-meta-row"><span class="s72-meta-key">REGION</span></div>
+      <div class="s72-meta-val">[ COLORADO ]</div>
+      <div class="s72-meta-row"><span class="s72-meta-key">IP ADDRESS</span></div>
+      <div class="s72-meta-val">[ REDACTED ]</div>
+    </div>
+    <span class="s72-meta-key s72-site-location-key">SITE LOCATION:</span>
+  </div>
+  <!-- SITE TITLE -->
+  <div class="s72-title-block">
+      <div class="s72-site-label">[ SITE 72 ]</div>
+      <span class="s72-site-sub">FACILITY PROTOCOL: [ CONEN - 5 |<span style= "color: #38761e;"> OMERTÁ </span>]</span>
+    <div class="s72-site-sub"> HUME METER</div>
+  </div>
+ 
+  <!-- WAVEFORM -->
+  <div class="s72-waveform-wrap">
+    <canvas id="s72-waveform" width="260" height="40"></canvas>
+  </div>
+ 
+  <!-- THREAT DETECTION -->
+  <div class="s72-section-label">THREAT DETECTION</div>
+  <div class="s72-threat-block">
+    <div class="s72-radar-wrap">
+      <canvas id="s72-radar" width="90" height="90"></canvas>
+    </div>
+    <div class="s72-status-lines" id="s72-status-lines">
+      <div>DEPARTMENT_CONDITION: NORMAL</div>
+      <div>CAMERA_FEED: FUNCTIONAL</div>
+      <div>BREACH_PROTOCOL: READY</div>
+      <div>POWER_SUPPLY: NORMAL</div>
+      <div>BACKUP_POWER_FUEL: NORMAL</div>
+      <div>FIRE_SUPPRESSION_SYSTEMS: FUNCTIONAL</div>
+      <div>ANOMALY_DETECTION: <s> SAFE</s> </div>
+      <div>CPU_USAGE = 8%</div>
+      <div>FACILITY_GROUNDS_FUNCTIONING = YES</div>
+      <div>THERMAL_SIGNATURES = [ UNKNOWN ]</div>
+    </div>
+  </div>
+ 
+  <!-- HKG LINE -->
+  <div class="s72-hkg-bar">
+    <span class="s72-hkg-text">H K G</span>
+    <canvas id="s72-hkg-wave" width="160" height="22"></canvas>
+  </div>
+ 
+  <!-- STATUS BAR -->
+  <div class="s72-status-bar">
+    <div class="s72-status-msgs" id="s72-status-msgs">
+      <div>CONNECTING...</div>
+      <div>OPTIMIZING INTERFACE...</div>
+      <div>SCAN COMPLETE</div>
+      <div>DEV MODE OFF</div>
+    </div>
+    <div class="s72-display-info">
+      <div class="s72-di-label">DISPLAYING FILE</div>
+      <div class="s72-di-val">VISIT COUNT / <span id="s72-visit-count">75986</span></div>
+    </div>
+  </div>
+ 
+  <!-- EVENT LOG -->
+  <div class="s72-section-label" style="margin-top:8px;">EVENT LOG</div>
+  <div class="s72-event-log" id="s72-event-log"></div>
+ 
+  <!-- SITE SAFETY INDEX -->
+  <div class="s72-safety-block">
+    <div class="s72-safety-bar-wrap">
+      <div class="s72-safety-fill" id="s72-safety-fill" style="height:78%"></div>
+    </div>
+    <div class="s72-safety-label-wrap">
+      <div class="s72-safety-title">SITE SAFETY INDEX</div>
+      <div class="s72-safety-pct" id="s72-safety-pct">78%</div>
+    </div>
+  </div>
+ 
+</div>
+  <!-- Locked item modal -->
+  <div class="new-item-overlay" id="locked-overlay">
+    <div class="new-item-modal">
+      <div class="new-item-header">
+        <span>ACCESS DENIED</span>
+        <button class="wc-btn wc-close" id="locked-close">&#10005;</button>
+      </div>
+      <div class="new-item-body">
+        <label id="locked-modal-label" style="font-size:11px; letter-spacing:0.14em; color:rgba(255,255,255,0.6);">
+          YOU DO NOT HAVE THE NECCESSARY AUTHORIZATION TO ACCESS THIS FILE, IF THIS IS AN ERROR PLEASE CONTACT YOUR LOCAL ADMINISTRATION DEPARTMENT
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Inbox modal -->
+  <div class="file-overlay" id="inbox-overlay">
+    <div class="file-window inbox-window" id="inbox-window">
+
+      <!-- Titlebar -->
+      <div class="file-window-titlebar inbox-titlebar">
+        <div class="inbox-title-left">
+          <span class="inbox-logo-text">SCIPNET COMMUNICATIONS</span>
+        </div>
+        <div class="file-window-controls">
+          <button class="wc-btn" style="color:rgba(255,255,255,0.4);">&#9472;</button>
+          <button class="wc-btn" style="color:rgba(255,255,255,0.4);">&#9633;</button>
+          <button class="wc-btn wc-close" id="inbox-close">&#10005;</button>
+        </div>
+      </div>
+
+      <!-- App bar -->
+      <div class="inbox-appbar">
+        <div class="inbox-appbar-left">
+          <span class="inbox-brand-icon">
+            <img alt="SCiPNET Logo" src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='1664'%20height='1664'%20fill='none'%20viewBox='0%200%201664%201664'%3e%3cpath%20stroke='%23fff'%20stroke-width='190'%20d='M832%201569c195.46%200%20382.92-77.65%20521.14-215.86C1491.35%201214.92%201569%201027.46%201569%20832c0-195.464-77.65-382.923-215.86-521.138C1214.92%20172.648%201027.46%2095%20832%2095'/%3e%3cpath%20stroke='%23fff'%20stroke-opacity='.63'%20stroke-width='190'%20d='M832%201569c-195.464%200-382.923-77.65-521.138-215.86C172.648%201214.92%2095%201027.46%2095%20832c0-195.464%2077.648-382.923%20215.862-521.138C449.077%20172.648%20636.536%2095%20832%2095'/%3e%3cpath%20fill='%23fff'%20d='m708%20445%20124%20124-124%20124-124-124%20124-124Zm248%200%20124%20124-124%20124-124-124%20124-124Zm124%20124%20124%20124-124%20124-124-124%20124-124Z'/%3e%3cpath%20fill='%23fff'%20d='m584%20569%20124%20124-124%20124-124-124%20124-124Z'/%3e%3cpath%20fill='%23fff'%20fill-opacity='.63'%20d='m832%20693%20124%20124-124%20124-124-124%20124-124Z'/%3e%3cpath%20fill='%23fff'%20d='m584%20817%20124%20124-124%20124-124-124%20124-124Zm124%20124%20124%20124-124%20124-124-124%20124-124Zm372-124%20124%20124-124%20124-124-124%20124-124Z'/%3e%3cpath%20fill='%23fff'%20d='m956%20941%20124%20124-124%20124-124-124%20124-124Z'/%3e%3c/svg%3e" />
+          </span>
+          <span class="inbox-brand-label">SCIPNET COMMUNICATION</span>
+          <button class="inbox-tab inbox-tab--active"><span class="material-symbols-outlined" style="font-size:13px; vertical-align:middle; margin-right:4px;">inbox</span><u>Inbox</u></button>
+          <button class="inbox-tab"><span class="material-symbols-outlined" style="font-size:13px; vertical-align:middle; margin-right:4px;">outbox</span>Sent</button>
+        </div>
+        <div class="inbox-appbar-right">
+          <button class="inbox-new-msg-btn">&#9998; <u>New Message</u></button>
+        </div>
+      </div>
+
+      <!-- Body: sidebar + content -->
+      <div class="inbox-body">
+
+        <!-- Left: message list -->
+        <div class="inbox-sidebar">
+          <div class="inbox-search-row">
+            <input type="text" class="inbox-search" placeholder="Search messages..." disabled />
+            <div class="inbox-sort">Sort by: <span class="inbox-sort-val"><u>Date</u></span> <span>&#9660;</span></div>
+          </div>
+          <div class="inbox-msg-list" id="inbox-msg-list"></div>
+        </div>
+
+        <!-- Right: message view -->
+        <div class="inbox-view" id="inbox-view">
+          <div class="inbox-placeholder">Select a conversation to view its contents</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
